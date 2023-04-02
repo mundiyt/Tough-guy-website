@@ -20,18 +20,24 @@
         <a href="//dsc.gg/qulitrium"><div class="button" id="discord"><img src="assets/img/discord.png" class="icon">Discord</div></a>
         <a href="//youtube.com/@mundiyt_"><div class="button" id="discord"><img src="assets/img/youtube.png" class="icon">YouTube</div></a>
 	<a href="//github.com/mundiyt"><div class="button" id="discord"><img src="assets/img/github.png" class="icon">GitHub</div></a>
-        <br>
-    </div>
+            <br>
+        </div>
+    </a>
 
+    <script>
+        particlesJS.load("particles-js", "/assets/particles.json", function() {
+            console.log("particles.js loaded from /files/json/particles.json. yay!");
+        });
+    </script>
+    <div id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1324" height="939"></canvas></div>
 
-	<script>
-	particlesJS.load("particles-js", "/assets/particles.json", function() {
-		console.log("particles.js loaded from /files/json/particles.json. yay!");
-	});
-	</script>
-	
+    <audio id="myAudio" src="landishi.mp3"></audio>
+    <script>
+        window.onload = function() {
+            var audio = document.getElementById("myAudio");
+            audio.play();
+        }
+    </script>
 
-
-	<div id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1324" height="939"></canvas></div>
-
-
+</body>
+</html>
