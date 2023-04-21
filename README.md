@@ -3,7 +3,6 @@ My personal website code is in the public domain you can take it to your site I 
 
 Donate for cookies (In rubles) - [Here](https://mundiyt.easydonate.ru/)
 
-![Screenshot 2023-04-01 at 11-14-46 Website by - mundiyt](https://user-images.githubusercontent.com/110762612/229274468-d274eb3b-510f-4f01-b1fc-f4ced97ebb88.png)
 
 ### How do I set up a website?
 
