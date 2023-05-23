@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+a {text-decoration: none;}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+#avatar-border {
+    -webkit-animation-name: shakal;
+	-webkit-animation-duration: 6.0s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+    display: grid;
+    padding: 2px;
+    border-radius: 100%;
+    background: linear-gradient(135deg,#505add 34.4%,#be40c0 66.11%,#fba82b 96.37%);
+    margin-bottom: 4px;
+}
+
+#avatar {
+    height: 128px;
+    border-radius: 100%;
+}
+
+#title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    margin: 0 8px;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.links a {
+    font-weight: 500;
+    color: white
+}
+
+.icon {
+    height: 16px;
+    margin-right: 4px;
+}
+
+.button {
+    padding: 8px;
+    background: rgb(49, 49, 49);
+    border-radius: 1rem;
+    transition: .2s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a:not(:last-child) {
+    margin-right: 4px;
+}
+
+audio {
+    margin-top: 8px;
+}
+
+#agar:hover { background: rgb(179, 64, 64); }
+#paste:hover { background: rgb(131, 70, 166); }
+#telegram:hover { background: rgb(55, 87, 102); }
+#discord:hover { background: rgb(64, 89, 179); }
+#yoobot:hover { background: rgb(166, 164, 70); }
+
+@media screen and (max-width: 512px) {
+    .links {
+        flex-direction: column;
+    }
+
+    .links a:not(:last-child) {
+		margin-right: 0;
+        margin-bottom: 8px;
+    }
+}
+
+@-webkit-keyframes shakal 
+{
+	0% 
+	{
+		-webkit-transform: rotateZ(0deg);
+	}
+		
+	50% 
+	{
+		-webkit-transform: rotateZ(180deg);
+	}
+	
+	100% 
+	{
+		-webkit-transform: rotateZ(360deg);
+	}
+}
+
+#particles-js canvas {
+	display: block;
+	vertical-align: bottom;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+	-webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+	transition: opacity .8s ease, transform 1.4s ease
+}
+
+#particles-js {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -10;
+	top: 0;
+	left: 0;
+}
